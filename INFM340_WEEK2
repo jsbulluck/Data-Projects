@@ -6,4 +6,4 @@ import matplotlib.pyplot as plt
 data = 'Coronavirus_Cases_in_Georgia.csv' #point python to dataset file location on your system
 df = pd.read_csv(data) #load dataset with pandas read_csv method
 df.head() #read the first 5 rows of the dataframe using the panda.DataFrame.head helper method
-df.plot(x = "CountyName", y = ['NumberReportedCases', 'Hospitalizations', 'Deaths'], kind="bar", stacked=True)
+df.plot(x="CountyName", y = ['NumberReportedCases', 'Deaths', 'Hospitalizations'], kind="bar", stacked=True, width = 5, rot=45)
